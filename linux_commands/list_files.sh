@@ -8,7 +8,6 @@
     # 2) Execute the script before submission and confirm the output
 
     cd ~/workspace/QBox/logs
-    ls -R
     ls -ltr
 
 
