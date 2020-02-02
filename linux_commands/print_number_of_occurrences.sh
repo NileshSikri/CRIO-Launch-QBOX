@@ -10,3 +10,5 @@
 
     cd ~/workspace/QBox/logs
     grep -o '230 Login successful' vsftpd1.log | wc -l
+
+    
