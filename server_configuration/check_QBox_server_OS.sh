@@ -19,6 +19,9 @@ requiredUbuntuVersion=18       # Ubuntu verison 18.0
     # 1) Add the line to populate the variable "linuxType" with the OS type.
     # 2) Start the expression to populate the variable with "cat $1" which is the command line filename input. Check the Usage above. 
 
+linux=`grep "ID=" /etc/os-release | awk 'NR==1 {print $1}'`
+linuxType=`expr substr $linux 4 6`
+
 if [ "$linuxType" = "$requiredOS1" ] || [ "$linuxType" = "$requiredOS2" ]
    then
    echo "OS is $requiredOS2 which is required for QBox"
@@ -34,6 +37,10 @@ fi
     # 2) Start the expression to populate the variable with "cat $1" which is the command line filename input. Check the Usage above. 
     # 3) Bash script can only do integer arithmetic. Include additional handling needed to strip the decimal part
     # 4) Execute the script before submission and confirm the output 
+
+ubuntuVersion=`grep "VERSION_ID=" /etc/os-release | awk 'NR==1{print $1}'`
+ubuntuVersion=`expr substr $ubuntuVersion 13 5`
+ubuntuVersion=${ubuntuVersion%.*}
 
 if test $ubuntuVersion -ge $requiredUbuntuVersion
    then

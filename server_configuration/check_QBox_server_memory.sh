@@ -19,7 +19,7 @@ requiredMemInKB=2000000        # 2 GB RAM, ideally it can be 2097152 KB
     #    E.g. totalMemInKB=`<bash command>`
     # 3) Start the expression to populate the variable with "cat $1" which is the command line filename input. Check the Usage above. 
     # 4) Execute the script before submission and confirm the output
-
+totalMemInKB=`grep MemTotal /proc/meminfo | awk '{print $2}'`
 if test $totalMemInKB -ge $requiredMemInKB
    then
    echo "Total Memory of $totalMemInKB KB is sufficient for QBox"
