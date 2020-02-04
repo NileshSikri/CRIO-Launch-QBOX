@@ -21,6 +21,7 @@ requiredCPUSpeedInMHz=1000     # 1 GHz
     # 3) Bash script can only do integer arithmetic. Include additional handling needed to strip the decimal part
     # 4) Execute the script before submission and confirm the output 
 
+#lscpu
 cpuSpeedInMHz=` grep "cpu MHz" /proc/cpuinfo | awk 'NR==1{print $4}'`
 cpuSpeedInMHz=${cpuSpeedInMHz%.*}
 
