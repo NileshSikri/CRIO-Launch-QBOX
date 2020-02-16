@@ -1,0 +1,10 @@
+256, 257
+Packets being resent after having been either lost or damaged. Packet Retransmission is identified thanks to their 
+TCP sequence and acknowledgement numbers,as well as checksum values. Only packets with a non-null payload are checked.
+
+Retransmission has a secondary consequence on the time required to receive data: when there is a retransmission,
+the host resets its TCP window and the size of the buffer to its minimum default size. This means that each time 
+there is a retransmission, the throughput is going back to a very low level and then starts increasing again progressively. 
+If retransmissions are frequent, then the throughput often goes back to a minimum level and never reaches an optimal level. 
+This means a much larger Data Transfer Time value, because the throughput to transfer the application response remains very low. 
+This phenomenon is what is usually called a TCP Slow-Start.
