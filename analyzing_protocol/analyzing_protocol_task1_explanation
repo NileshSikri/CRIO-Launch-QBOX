@@ -1,0 +1,5 @@
+If your internet connection connects straight in to your computer, then your computer is assigned the external IP 
+address. However, if your computer connects to a router then the computer will most likely get an internal IP 
+address like 192.168.1.100 and your router will get the external IP address. Even though the internal IP is a 
+different IP address, it's on the same network and all devices connected will share the same external IP. 
+However, each connected device will have a different IP address from any other internal device. 
