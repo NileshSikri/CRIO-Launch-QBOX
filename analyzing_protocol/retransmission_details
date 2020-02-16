@@ -1,2 +1,2 @@
-256, 257
-Packets being resent after having been either lost or damaged. Packet Retransmission is identified thanks to their TCP.
+6, 16, 17, 18, 19, 21,23
+Packets being resent after having been either lost or damaged.

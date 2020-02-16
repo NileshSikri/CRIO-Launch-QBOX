@@ -1,2 +1,2 @@
-113, 117
-When a client (or server – but it is usually the client) advertises a zero value for its window size, this indicates that the TCP receive buffer is full and it cannot receive any more data. It may have a stuck processor or be busy with some other task, which can cause the TCP receive buffer to fill.
+113, 117, 955, 969, 1273, 1747, 1774
+When a client advertises a zero value for its window size, this indicates that the TCP receive buffer is full and it cannot receive any more data.
