@@ -1,3 +1,1 @@
-What is a TCP Connection Refused? In general, connection refused errors are generated during a connect system call when an application 
-attempts to connect using TCP to a server port which is not open. ... A service error, such as where the service that should be 
-listening on a port has crashed or is otherwise unavailable.
+What is a TCP Connection Refused? In general, connection refused errors are generated during a connect system call when an application attempts to connect using TCP to a server port which is not open. ... A service error, such as where the service that should be listening on a port has crashed or is otherwise unavailable.
